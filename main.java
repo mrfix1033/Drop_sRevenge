@@ -23,7 +23,7 @@ public class main extends JavaPlugin implements CommandExecutor, Listener {
     }
 
     @EventHandler
-    public void b(VehicleExitEvent e) {
+    public void b(VehicleExitEvent e) { // не срабатывает :(
         if (e.getVehicle().getType() == EntityType.DROPPED_ITEM)
             e.setCancelled(true);
     }
